@@ -1,0 +1,17 @@
+﻿SELECT "WeekDay"."Code" AS "День",
+	"LessonNumber" AS "Номер пары",
+	"Auditory" AS "Аудитория",
+	CONCAT("Users"."Surname",' ',
+		"Users"."Fathername",' ',
+		"Users"."Name") AS "Преподаватель",
+	"Groups"."Name" AS "Группа",
+	"Disciplines"."Name" AS "Предмет"
+FROM PUBLIC."Schedule",
+	"Users",
+	"Groups",
+	"Disciplines",
+	"WeekDay"
+WHERE "Schedule"."TeacherId" = "Users"."Id"
+	AND "Schedule"."GroupId" = "Groups"."Id"
+	AND "Schedule"."DisciplineId" = "Disciplines"."Id"
+	AND "Schedule"."WeekDay" = "WeekDay"."Id"

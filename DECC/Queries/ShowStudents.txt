@@ -1,0 +1,16 @@
+﻿SELECT CONCAT("Users"."Name",' ',
+			"Users"."Fathername",' ',
+			"Users"."Surname")As "Обучающийся",
+		"Users"."Birthdate" AS "Дата рождения",
+		"Users"."Phone" AS "Телефон",
+		"Groups"."Name" AS "Группа",
+		"Profiles"."Name" AS "Профиль",
+		"Groups"."Course" AS "Курс",
+		"Students"."AdmissionDate" AS "Дата поступления"
+FROM PUBLIC."Users",
+		"Groups",
+		"Profiles",
+		"Students"
+WHERE "Users"."Id" = "Students"."Id"
+	AND "Students"."GroupId" = "Groups"."Id"
+	AND "Groups"."ProfileId" = "Profiles"."Id"

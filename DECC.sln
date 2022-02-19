@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DECC", "DECC\DECC.csproj", "{D2B0B420-7265-4183-B5CC-2821069185DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DECC.Infrastructure", "DECC.Infrastructure\DECC.Infrastructure.csproj", "{78F32CD8-88EE-411D-9CEF-9DDE34D90623}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2B0B420-7265-4183-B5CC-2821069185DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2B0B420-7265-4183-B5CC-2821069185DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2B0B420-7265-4183-B5CC-2821069185DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2B0B420-7265-4183-B5CC-2821069185DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78F32CD8-88EE-411D-9CEF-9DDE34D90623}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78F32CD8-88EE-411D-9CEF-9DDE34D90623}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78F32CD8-88EE-411D-9CEF-9DDE34D90623}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78F32CD8-88EE-411D-9CEF-9DDE34D90623}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {79D6D2FA-68D0-405E-AC5F-52879C1979AE}
+	EndGlobalSection
+EndGlobal

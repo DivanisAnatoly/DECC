@@ -1,0 +1,13 @@
+﻿SELECT CONCAT("Users"."Surname",' ',
+		"Users"."Fathername",' ',
+		"Users"."Name") AS "Преподаватель",
+		"Users"."Birthdate" AS "Дата рождения",
+		"Users"."Phone" AS "Телефон",
+		"Positions"."Name" AS "Должность",
+		"HoursPerWeek" AS "Часы в неделю",
+		"EmploymentDate" AS "Дата трудоустройства"
+FROM PUBLIC."Users",
+	"Teachers",
+	"Positions"
+WHERE "Teachers"."Id" = "Users"."Id"
+	AND "Teachers"."PositionId" = "Positions"."Id"

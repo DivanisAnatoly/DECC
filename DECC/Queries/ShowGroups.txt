@@ -1,0 +1,13 @@
+﻿SELECT "Groups"."Name" AS "Группа",
+		"Groups"."Format" AS "Дата рождения",
+		"Profiles"."Name" AS "Профиль",
+		"Groups"."FromYear" AS "С",
+		"Groups"."ToYear" AS "До",
+		CONCAT("Users"."Surname",' ',
+			"Users"."Fathername",' ',
+			"Users"."Name")As "Куратор"
+FROM PUBLIC."Groups",
+	"Users",
+	"Profiles"
+WHERE "Profiles"."Id" = "Groups"."ProfileId"
+	AND "Users"."Id" = "Groups"."CuratorId"

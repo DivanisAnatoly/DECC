@@ -1,0 +1,7 @@
+﻿SELECT "Users"."Id",
+		CONCAT("Users"."Surname",' ',
+			"Users"."Name",' ',
+			"Users"."Fathername") AS "Преподаватель"
+FROM PUBLIC."Users",
+	"Teachers"
+WHERE "Teachers"."Id" = "Users"."Id"

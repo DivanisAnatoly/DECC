@@ -1,0 +1,8 @@
+﻿SELECT "Disciplines"."Id",
+	   "Disciplines"."Name" AS "Предмет",
+		CONCAT("Users"."Surname",' ',
+			"Users"."Name",' ',
+			"Users"."Fathername")As "Ведущий преподаватель"
+FROM PUBLIC."Disciplines",
+	"Users"
+WHERE "Disciplines"."LeadTeacherId" = "Users"."Id"
